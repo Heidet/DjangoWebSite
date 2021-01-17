@@ -1,8 +1,21 @@
 {% extends "store/index.html" %}
 {% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'django_colorbox/css/colorbox.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'store/css/presentation.css' %}"/>
+{% endblock %}
+
 {% block content %}
-<div class="container">
-    <div class="carousel">
+<div style="text-align:center">
+  <div class="slider" id="prop1"></div>
+  <div class="slider" id="prop2"></div>
+    
+    <canvas id="canvasOne" width="900" height="520" ></canvas>
+  </div>
+  
+<div class="content">
+    <div class="flip">
       <div class="item a">A</div>
       <div class="item b">B</div>
       <div class="item c">C</div>
@@ -14,3 +27,10 @@
   <div class="next">Next</div>
 <div class="prev">Prev</div>
 {% endblock %}
+
+{% block scripts %}
+<script src="{% static 'store/js/modernizr.js' %}"></script>
+<script src="{% static 'store/js/canvas.js' %}"></script>
+<script src="{% static 'store/js/presentation.js' %}"></script>
+{% endblock %}
+
