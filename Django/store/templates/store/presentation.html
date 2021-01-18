@@ -4,28 +4,92 @@
 {% block link %}
 <link rel="stylesheet" href="{% static 'django_colorbox/css/colorbox.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'store/css/presentation.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'store/css/linkedin.css' %}"/>
 {% endblock %}
 
 {% block content %}
-<div style="text-align:center">
-  <div class="slider" id="prop1"></div>
-  <div class="slider" id="prop2"></div>
-    
-    <canvas id="canvasOne" width="900" height="520" ></canvas>
-  </div>
-  
-<div class="content">
-    <div class="flip">
-      <div class="item a">A</div>
-      <div class="item b">B</div>
-      <div class="item c">C</div>
-      <div class="item d">D</div>
-      <div class="item e">E</div>
-      <div class="item f">F</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- <a class="navbar-brand pl-3" href="#">HEIDET Antoine</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse pl-4" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#intro">Accueil <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#competence">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#realisation">Réalisations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/heidet" target="_blank">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/cv">CV</a>    
+        </li>
+      </ul>
     </div>
-  </div>
-  <div class="next">Next</div>
-<div class="prev">Prev</div>
+</nav>
+
+<div style="text-align:center">
+  <div id="prop1" class="slider" ></div>
+  <div id="prop2" class="slider" ></div>
+  <canvas id="canvasOne" width="900" height="520" ></canvas>
+</div>
+<div class="LI-profile-badge mr-3 mt-4" data-version="v1" data-size="medium" data-locale="fr_FR" data-type="vertical" data-theme="dark" data-vanity="antoine-heidet" data-rendered="true" data-uid="893590"><a class="LI-simple-link" href="https://fr.linkedin.com/in/antoine-heidet?trk=profile-badge">Antoine Heidet</a><div><script src="https://static-exp1.licdn.com/sc/h/72xycxf4qmb98e93i5rrrb0ix" type="text/javascript"></script><code id="__pageContext__" style="display: none;"><!--{"baseScdsUrl":"https://static-exp1.licdn.com/scds","contextPath":"/","pageInstance":"urn:li:page:profile-badge-view;iYZCWyZ3Q8i9vL6MraauhA==","isProd":true,"brotliBaseSparkUrlForHashes":"https://static-exp1.licdn.com/sc/h","linkedInDustJsUrl":"https://static-exp1.licdn.com/sc/h/72xycxf4qmb98e93i5rrrb0ix","baseSparkUrlForHashes":"https://static-exp1.licdn.com/sc/h","isCsUser":false,"appName":"badger-frontend","fizzyJsUrl":"https://static-exp1.licdn.com/scds/common/u/lib/fizzy/fz-1.3.3-min.js","mpName":"badger-frontend","scHashesUrl":"https://static-exp1.licdn.com/sc/p/com.linkedin.badger-frontend%3Abadger-frontend-static-content%2B2.0.27/f/%2Fbadger-frontend%2Fsc-hashes%2Fsc-hashes_fr_FR.js","dustDebug":"control","baseMediaUrl":"https://media-exp1.licdn.com/media","isBrotliEnabled":false,"useCdn":true,"locale":"fr_FR","version":"2.0.27","useScHashesJs":true,"cdnUrl":"https://static-exp1.licdn.com","baseMprUrl":"https://media-exp1.licdn.com/mpr/mpr","playUtilsUrl":"https://static-exp1.licdn.com/sc/h/dboo6gkjxfl86suhvq9r33p8c","useNativeXmsg":false,"hashesDisabledByQueryParam":false,"baseAssetsUrl":"https://static-exp1.licdn.com/sc/p/com.linkedin.badger-frontend%3Abadger-frontend-static-content%2B2.0.27/f","csrfToken":null,"intlPolyfillUrl":"https://static-exp1.licdn.com/sc/h/7jf8t3zliju86nmmo196d6fj9","serveT8WithDust":false,"disableDynamicConcat":false,"baseSparkUrlForFiles":"https://static-exp1.licdn.com/sc/p/com.linkedin.badger-frontend%3Abadger-frontend-static-content%2B2.0.27/f","dustUtilsUrl":"https://static-exp1.licdn.com/sc/h/5b7o0ma0mrxi3mx34zrcf5p5r","linkedInDustI18nJsUrl":"https://static-exp1.licdn.com/sc/h/29z6wdch6nxqfg6rvwqhqkyy0","baseMediaProxyUrl":"https://media-exp1.licdn.com/media-proxy"}--></code><script src="https://static-exp1.licdn.com/sc/p/com.linkedin.badger-frontend%3Abadger-frontend-static-content%2B2.0.27/f/%2Fbadger-frontend%2Fsc-hashes%2Fsc-hashes_fr_FR.js"></script><script src="https://static-exp1.licdn.com/sc/h/5b7o0ma0mrxi3mx34zrcf5p5r"></script><link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/cfzfb7mbaaxnxarmlhhyn5t8p"><div dir="ltr" class="LI-badge-container-vertical-dark LI-badge-container vertical dark medium" style="display: none"> <div class="LI-profile-badge-header LI-name-container"><div class="LI-col"><div class="LI-profile-pic-container" style="background-image: url(https://static-exp1.licdn.com/sc/h/856xpihrituhwdjrua9z5u5na);"><img src="https://media-exp1.licdn.com/dms/image/C5603AQHnCfoSewpJVg/profile-displayphoto-shrink_200_200/0/1596711074969?e=1616630400&amp;v=beta&amp;t=9B-0dvNMJdPsx3DF9JdfcjxguFHGIkiIOja-K6HWJC0" class="LI-profile-pic" alt="Antoine Heidet"></div></div><div class="LI-col LI-header"><div class="LI-name"><a href="https://fr.linkedin.com/in/antoine-heidet?trk=profile-badge-name">Antoine Heidet</a></div><div class="LI-title">Analyst programmer chez EZDEV SARL</div></div></div><ul class="more-info"><li class="LI-field"><a href="https://www.linkedin.com/company/ezdev-sarl?trk=profile-badge-company">EZDEV SARL</a></li><li class="LI-field"><a href="https://www.linkedin.com/edu/openclassrooms-379021?trk=profile-badge-school">OpenClassrooms</a></li></ul><div class="LI-profile-badge-footer"><a href="https://fr.linkedin.com/in/antoine-heidet?trk=profile-badge-cta" class="LI-view-profile">Voir le profil</a><span class="LI-logo"><img src="https://static-exp1.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_flat_white_93x21.png" alt="LinkedIn" class="LI-icon"></span></div></div></div></div></div>
+
+
+
+<div style="text-align:center">
+  <div class="content">
+      <div class="flip">
+          <div class="item a">
+            <div class="blockitem"  style="display: flex; padding-top:10%;">
+              <i class="fa fa-shield-alt" style="font-size:350%"></i>
+              <div class="figure">
+                <h1 class="title_itema">Design responsive (Site web réactif)</h1>
+                <p>Un site web réactif est un site web dont la conception vise, grâce à différents principes et techniques, à offrir une consultation confortable sur des écrans de tailles très différentes.</p>
+              </div>
+            </div>  
+          </div>
+
+          <div class="item b">
+            <h1 class="title_itemb">Design responsive (Site web réactif)</h1>
+            <p>Un site web réactif est un site web dont la conception vise, grâce à différents principes et techniques, à offrir une consultation confortable sur des écrans de tailles très différentes.</p>
+          </div>
+
+          <div class="item c">
+            <h1 class="title_itemc">Design responsive (Site web réactif)</h1>
+            <p>Un site web réactif est un site web dont la conception vise, grâce à différents principes et techniques, à offrir une consultation confortable sur des écrans de tailles très différentes.</p>
+          </div>
+
+          <div class="item d">
+            <h1 class="title_itemd">Design responsive (Site web réactif)</h1>
+            <p>Un site web réactif est un site web dont la conception vise, grâce à différents principes et techniques, à offrir une consultation confortable sur des écrans de tailles très différentes.</p>
+          </div>
+
+          <div class="item e">
+            <h1 class="title_iteme">Design responsive (Site web réactif)</h1>
+            <p>Un site web réactif est un site web dont la conception vise, grâce à différents principes et techniques, à offrir une consultation confortable sur des écrans de tailles très différentes.</p>
+          </div>
+
+          <div class="item f">
+            <h1 class="title_itemf">Design responsive (Site web réactif)</h1>
+            <p>Un site web réactif est un site web dont la conception vise, grâce à différents principes et techniques, à offrir une consultation confortable sur des écrans de tailles très différentes.</p>
+          </div>
+      </div>
+    </div>
+    <div class="next">Next</div>
+  <div class="prev">Prev</div>
+</div>
+
 {% endblock %}
 
 {% block scripts %}
