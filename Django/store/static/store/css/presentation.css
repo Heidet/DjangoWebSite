@@ -5,6 +5,10 @@ body {
     font: 15px/20px Arial, sans-serif; */
 }
 
+html {
+    background-color: black!important;
+}
+
 .content {
     margin: 0 auto;
     width: 250px;
@@ -138,11 +142,15 @@ span.navbar-toggler-icon{
     background-image : url('../img/button.png')!important;
 }
 
+.jumbotron {
+    padding-top: 15%;
+}
+
+.skills-bar-container {
+    padding-top: 20%;
+}
+
 @media (min-width: 300px) and (max-width: 767.98px) { 
-    /* .item {
-        width: 220px!important;
-        height: 220px!important;
-    } */
     .next, .prev{
         visibility: hidden;
     }

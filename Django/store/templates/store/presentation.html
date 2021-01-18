@@ -2,9 +2,9 @@
 {% load static %}
 
 {% block link %}
-<link rel="stylesheet" href="{% static 'django_colorbox/css/colorbox.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'store/css/presentation.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'store/css/linkedin.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'store/css/skill.css' %}"/>
 {% endblock %}
 
 {% block content %}
@@ -90,11 +90,69 @@
   <div class="prev">Prev</div>
 </div>
 
+<div class="container-fluid">
+  <div class="jumbotron">
+    <ul class="skills-bar-container">
+  
+      <li>
+        <div class="progressbar-title">
+          <h3>HTML5</h3>
+          <span class="percent" id="html-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar progressred" id="progress-html"></span>
+        </div>
+      </li>
+      <li>
+        <div class="progressbar-title">
+          <h3>CSS / SASS</h3>
+          <span class="percent" id="css-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar progressblue" id="progress-css"></span>
+        </div>
+      </li>
+      
+      <li>
+        <div class="progressbar-title">
+          <h3>JavaScript / jQuery</h3>
+          <span class="percent" id="javascript-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar progresspurple" id="progress-javascript"></span>
+        </div>
+      </li>
+      
+      <li>
+        <div class="progressbar-title">
+          <h3>PYTHON / Django</h3>
+          <span class="percent" id="python-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar progressorange" id="progress-python"></span>
+        </div>
+      </li>
+      
+      <li>
+        <div class="progressbar-title">
+          <h3>VueJS</h3>
+          <span class="percent" id="vue-pourcent"></span>
+        </div>
+        <div class="bar-container">
+          <span class="progressbar progressgreen" id="progress-vue"></span>
+        </div>
+      </li>
+      
+    </ul>
+  </div> 
+</div>
+
 {% endblock %}
 
 {% block scripts %}
 <script src="{% static 'store/js/modernizr.js' %}"></script>
 <script src="{% static 'store/js/canvas.js' %}"></script>
+<script src="{% static 'store/js/skill.js' %}"></script>
 <script src="{% static 'store/js/presentation.js' %}"></script>
 {% endblock %}
 
