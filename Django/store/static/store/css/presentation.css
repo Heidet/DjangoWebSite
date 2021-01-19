@@ -150,6 +150,14 @@ span.navbar-toggler-icon{
     padding-top: 20%;
 }
 
+.headerskill {
+    display: flex;
+}
+
+.headerskill > i {
+    margin-right: 5%;
+}
+
 @media (min-width: 300px) and (max-width: 767.98px) { 
     .next, .prev{
         visibility: hidden;
@@ -173,6 +181,10 @@ span.navbar-toggler-icon{
     .item {
         width: 280px;
         height: 300px;
+    }
+    .jumbotron{
+        padding-top: 30%;
+
     }
 }
 @media (min-width: 1290px) { 

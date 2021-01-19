@@ -2,13 +2,13 @@ var lang = {
     "html": "100%",
     "css": "90%",
     "javascript": "70%",
-    "python": "65%",
+    "python": "55%",
     "vue": "35%"
 };
   
 var multiply = 4;
 
-$.each( lang, function( language, pourcent) {
+$.each( lang, function(language, pourcent) {
 
 var delay = 700;
 
